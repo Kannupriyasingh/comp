@@ -43,7 +43,7 @@ for(int i = 0; i < jobs; i++)
     for(int j = 0; j < person; j++)
     cin >> arr[i][j];
 }
-// dp size is 1 to 2^n-1 and here n == jobs
+// dp size is 0 to 2^n-1 and here n == jobs
 int *dp = new int[1<<jobs];
 for(int i = 0; i < (1<<jobs); i++)
 dp[i] = INT_MAX;
